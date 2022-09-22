@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Илья Сидоренко](https://up.htmlacademy.ru/htmlcss/35/user/2145465).
-* Наставник: `Дмитрий Рябинин`.
+* Наставник: `Дмитрий Рябинин`(https://htmlacademy.ru/profile/haschish).
 
 ---
 
