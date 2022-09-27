@@ -1,12 +1,135 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Sedona</title>
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <header class="main-header">
+      <a class="main-logo">
+        <img src="#" alt="Logo Sedona">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#" class="main-nav-link">Главная</a></li>
+          <li><a href="#" class="main-nav-link">О Седоне</a></li>
+          <li><a href="catalog.html" class="main-nav-link">Гостиницы</a></li>
+          <li><a class="navigation-link" href="">
+            <span class="visually-hidden">Поиск</span>
+          </a></li>
+          <li><a class="navigation-link" href="">
+            <span class="visually-hidden">Избранное</span>
+          </a></li>
+          <li><a href="#" class="main-nav-link">ХОЧУ СЮДА!</a></li>
+        </ul>
+      </nav>
+      <div class="main-header-background">
+        <img src="#" alt="Main Sedona" class="main-img">
+        <img src="#" alt="Welcome to the gargeous Sedona. Because the Grand Canyon sucks!" class="main-img-logo">
+      </div>
+    </header>
+    <main class="main-content">
+      <h1 class="main-head">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,  ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
+      <p class="main-descr">Рассмотрим причины, по которым Седона круче, чем Гранд Каньон!</p>
+      <section class="real-city">
+        <div class="real-city-text-block">
+          <p class="real-city-text-block-head">НАСТОЯЩИЙ<br>ГОРОДОК</p>
+          <p class="real-city-text-block-descr">——</p>
+          <p class="real-city-text-block-descr">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <div class="real-city-img">
+          <img src="#" alt="Седона, вид на горы" width="800">
+        </div>
+      </section>
+      <section class="attractions attractions-first">
+        <h2 class="visually-hidden">Что у нас есть</h2>
+        <ul class="attractions-list">
+          <li class="attraction-block">
+            <p class="attraction-head">НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</p>
+            <p class="text-block-description">——</p>
+            <p class="attraction-description">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="attraction-block">
+            <p class="attraction-head">КРАСИВАЯ<br>ДОРОГА</p>
+            <p class="text-block-description">——</p>
+            <p class="attraction-description">Ехать в Седону ИЗ Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="attraction-block">
+            <p class="attraction-head">МАЛО<br>ТУРИСТОВ</p>
+            <p class="text-block-description">——</p>
+            <p class="attraction-description">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+      <section class="diablo-bridge">
+        <h2 class="visually-hidden">Мост дьявола</h2>
+        <div class="diablo-bridge-text-block">
+          <p class="diablo-bridge-text-block-head">ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</p>
+          <p class="diablo-bridge-text-block-description">——</p>
+          <p class="diablo-bridge-text-block-description">Да, по нему можно пройти! Если, вы осмелитесь, разумеется</p>
+        </div>
+        <div class="diablo-bridge-img">
+          <img src="#" alt="Седона, мост дьявола" width="800">
+        </div>
+      </section>
+      <section class="attractions attractions-icons attractions-second">
+        <h2 class="visually-hidden">Что у нас есть</h2>
+        <ul class="attractions-list attractions-list-icons">
+          <li class="attraction-block">
+            <p class="attraction-head">Жилье</p>
+            <p class="attraction-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="attraction-block">
+            <p class="attraction-head">ЕДА</p>
+            <p class="attraction-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="attraction-block">
+            <p class="attraction-head">СУВЕНИРЫ</p>
+            <p class="attraction-description">Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="search-block">
+        <h1 class="search-hotels-title">ЗАИНТЕРЕСОВАЛИСЬ?</h1>
+        <p class="search-hotels-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="search-hotels-button">Поиск гостинницы в Седоне</a>
+      </section>
+      <section class="subscribe-block">
+        <img src="#" alt="Седона, горы">
+        <h1 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h1>
+        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <div class="subscribe-input">
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+            <button class="button" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
 
-  </body>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <img src="#" alt="Вконтакте">
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <img src="#" alt="Телеграм">
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <img src="#" alt="Ютуб">
+            </a>
+          </li>
+        </ul>
+        <p class="phone">+7 (812) 812-12-12</p>
+        <a class="main-logo">
+          <img src="#" alt="Logo Html.academy">
+        </a>
+    </footer>
+</body>
 </html>

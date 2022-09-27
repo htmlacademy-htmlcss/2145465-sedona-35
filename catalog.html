@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <title>catalog</title>
+</head>
+<body>
+  <header class="main-header">
+    <a class="main-logo">
+      <img src="#" alt="Logo Sedona">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a href="index.html" class="main-nav-link">Главная</a></li>
+        <li><a href="#" class="main-nav-link">О Седоне</a></li>
+        <li><a href="catalog.html" class="main-nav-link">Гостиницы</a></li>
+        <li><a class="navigation-link" href="">
+          <span class="visually-hidden">Поиск</span>
+        </a></li>
+        <li><a class="navigation-link" href="">
+          <span class="visually-hidden">Избранное</span>
+        </a></li>
+        <li><a href="#" class="main-nav-link">ХОЧУ СЮДА!</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <main class="catalog-main">
+    <section class="filter-block">
+      <h1 class="catalog-title"> Гостиницы Седоны</h1>
+      <h2 class="visually-hidden">Фильтр отелей</h2>
+      <form action="https://echo.htmlacademy.ru" class="filter-form" method="post" >
+        <div class="inrfastructure-filter-block">
+          <p class="filter-head">Инфраструктура:</p>
+          <input type="checkbox" name="pool" id="pool" class="visually-hidden" checked>
+          <label for="pool" class="filter-label">Бассейн</label>
+          <input type="checkbox" name="parking" id="parking" class="visually-hidden">
+          <label for="parking" class="filter-label">Парковка</label>
+          <input type="checkbox" name="wifi" id="wifi" class="visually-hidden">
+          <label for="wifi" class="filter-label">Wi-fi</label>
+        </div>
+        <div class="housing-filter-block">
+          <p class="filter-head">Тип жилья:</p>
+          <input type="checkbox" name="hotel" id="hotel" class="visually-hidden" checked>
+          <label for="hotel" class="filter-label">Гостиница</label>
+          <input type="checkbox" name="motel" id="motel" class="visually-hidden" checked>
+          <label for="motel" class="filter-label">Мотель</label>
+          <input type="checkbox" name="apartments" id="apartments" class="visually-hidden" checked>
+          <label for="apartments" class="filter-label">Апартаменты</label>
+        </div>
+        <div class="price-filter-block">
+          <p class="filter-head">Стоимость, Р:</p>
+          <div class="price-filter-subblock">
+            <div class="filter-price-slider">
+              <div class="price-slider" id="range-slider"></div>
+            </div>
+            <div class="visually-hidden">
+              <label for="min-price-value">Минимальая цена</label>
+              <input type="text" id="min-price-value" name="min-price-value" tabindex="-1" value="0">
+              <label for="max-price-value">Максимальная цена</label>
+              <input type="text" id="max-price-value" name="max-price-value" tabindex="-1" value="9000">
+              <button type="submit" class="form-submit">Применить</button>
+              <button type="reset" class="form-reset">Сбросить</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="content">
+      <h2 class="visually-hidden">Доступные отели:</h2>
+      <div class="sort-method">
+        <p class="sort-method-head">Найдено: <span id="hotelNumber">38</span></p>
+        <select>
+          <option>Сначала дешевые</option>
+        </select>
+        <ul class="sort-method-list">
+          <li><a href="#" class="sort-method-grid">сетка</a></li>
+          <li><a href="#" class="sort-method-card">карточка</a></li>
+          <li><a href="#" class="sort-method-line">строка</a></li>
+        </ul>
+      </div>
+      <ul class="content-list">
+        <li class="content-item">
+          <div class="content-item-wrapper">
+            <img src="#" alt="Amara hotel" class="hotel-img">
+            <div class="item-description">
+              <div class="item-description-wrapper">
+                <a href="#" class="item-head">Amara Resort & Spa</a>
+                <div class="item-description-subwrapper">
+                  <div class="item-description-block">
+                    <p>Гостиница</p>
+                    <a href="#" class="item-button item-button-detail">Подробнее</a>
+                  </div>
+                  <div class="item-description-block">
+                    <p>от 4000 р.</p>
+                    <a href="#" class="item-button item-button-like">В избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item-description-rating">
+                <ul class="item-description-rating-list">
+                  <li><span class="visually-hidden">1 звезда</span></li>
+                  <li><span class="visually-hidden">2 звезды</span></li>
+                  <li><span class="visually-hidden">3 звезды</span></li>
+                  <li><span class="visually-hidden">4 звезды</span></li>
+                  <li class="display-none"><span class="visually-hidden">5 звезд</span></li>
+                </ul>
+                <p class="item-description-rating-text">Рейтинг: <span class="item-rating">8,5</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="content-item">
+          <div class="content-item-wrapper">
+            <img src="#" alt="Villas hotel" class="hotel-img">
+            <div class="item-description">
+              <div class="item-description-wrapper">
+                <a href="#" class="item-head">Villas at Poco Diablo</a>
+                <div class="item-description-subwrapper">
+                  <div class="item-description-block">
+                    <p>Гостиница</p>
+                    <a href="#" class="item-button item-button-detail">Подробнее</a>
+                  </div>
+                  <div class="item-description-block">
+                    <p>от 5000 р.</p>
+                    <a href="#" class="item-button item-button-like">В избранном</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item-description-rating">
+                <ul class="item-description-rating-list">
+                  <li><span class="visually-hidden">1 звезда</span></li>
+                  <li><span class="visually-hidden">2 звезды</span></li>
+                  <li><span class="visually-hidden">3 звезды</span></li>
+                  <li><span class="visually-hidden">4 звезды</span></li>
+                  <li class="display-none"><span class="visually-hidden">5 звезд</span></li>
+                </ul>
+                <p class="item-description-rating-text">Рейтинг: <span class="item-rating">9,2</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="content-item">
+          <div class="content-item-wrapper">
+            <img src="#" alt="Desert hotel" class="hotel-img">
+            <div class="item-description">
+              <div class="item-description-wrapper">
+                <a href="#" class="item-head">Desert Quail Inn</a>
+                <div class="item-description-subwrapper">
+                  <div class="item-description-block">
+                    <p>Гостиница</p>
+                    <a href="#" class="item-button item-button-detail">Подробнее</a>
+                  </div>
+                  <div class="item-description-block">
+                    <p>от 2500 р</p>
+                    <a href="#" class="item-button item-button-like">В избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item-description-rating">
+                <ul class="item-description-rating-list">
+                  <li><span class="visually-hidden">1 звезда</span></li>
+                  <li><span class="visually-hidden">2 звезды</span></li>
+                  <li><span class="visually-hidden">3 звезды</span></li>
+                  <li class="display-none"><span class="visually-hidden">4 звезды</span></li>
+                  <li class="display-none"><span class="visually-hidden">5 звезд</span></li>
+                </ul>
+                <p class="item-description-rating-text">Рейтинг: <span class="item-rating">6,9</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="content-item">
+          <div class="content-item-wrapper">
+            <img src="#" alt="GreenTree hotel" class="hotel-img">
+            <div class="item-description">
+              <div class="item-description-wrapper">
+                <a href="#" class="item-head">GreenTree Inn</a>
+                <div class="item-description-subwrapper">
+                  <div class="item-description-block">
+                    <p>Гостиница</p>
+                    <a href="#" class="item-button item-button-detail">Подробнее</a>
+                  </div>
+                  <div class="item-description-block">
+                    <p>от 1500 р</p>
+                    <a href="#" class="item-button item-button-like">В избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item-description-rating">
+                <ul class="item-description-rating-list">
+                  <li><span class="visually-hidden">1 звезда</span></li>
+                  <li><span class="visually-hidden">2 звезды</span></li>
+                  <li class="display-none"><span class="visually-hidden">3 звезды</span></li>
+                  <li class="display-none"><span class="visually-hidden">4 звезды</span></li>
+                  <li class="display-none"><span class="visually-hidden">5 звезд</span></li>
+                </ul>
+                <p class="item-description-rating-text">Рейтинг: <span class="item-rating">5,0</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      
+    </section>
+  </main>
+
+  <section class="subscribe-block">
+    <h1 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h1>
+    <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <div class="subscribe-input">
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+        <button class="button" type="submit">Подписаться</button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+
+    <ul class="footer-social-list">
+      <li class="footer-social-item">
+        <a class="button" href="#">
+          <img src="#" alt="Вконтакте">
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="button" href="#">
+          <img src="#" alt="Телеграм">
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="button" href="#">
+          <img src="#" alt="Ютуб">
+        </a>
+      </li>
+    </ul>
+    <p class="phone">+7 (812) 812-12-12</p>
+    <a class="main-logo">
+      <img src="#" alt="Logo Html.academy">
+    </a>
+</footer>
+</body>
+</html>
