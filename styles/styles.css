@@ -1475,16 +1475,12 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-family: inherit;
-
-
-}
-.field[type=date]::-webkit-calendar-picker-indicator {
-  opacity: 1;
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   cursor: pointer;
-
+  background-position: center right 22px;
 }
+
 
 .field:focus-visible {
   background-color: #e6e6e6;
