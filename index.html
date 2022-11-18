@@ -139,7 +139,7 @@
 				<div class="subscribe-input">
 					<form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
 						<label for="email" class="field-label visually-hidden">Ваш e-mail.</label>
-						<input class="subscribe-email" placeholder="Ваш email" type="email" id="email" name="subscribe-email" id="subscribe-email" required>
+						<input class="subscribe-email" placeholder="Ваш email" type="email" id="email" name="subscribe-email" required>
 						<button class="subscribe-button button button-blue" type="submit">Подписаться</button>
 					</form>
 				</div>
@@ -192,59 +192,64 @@
 			</button>
 			<h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 			<form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-				<label class="form-label appointment-label" for="appointment-date">Дата Заезда:</label>
-				<div class="input-appointment">
 
+				<div class="input-appointment input-modal">
+					<label class="form-label appointment-label" for="appointment-date">Дата Заезда:</label>
 					<input class="field" type="text" id="appointment-date" name="appointment-date" value="27 апреля 2020" placeholder="Укажите дату" required>
 					<p class="error">Мы не можем отправить вас в прошлое.</p>
 				</div>
-				<label class="form-label departure-label" for="departure-date">Дата Выезда:</label>
-				<div class="input-departure">
+
+				<div class="input-departure input-modal">
+					<label class="form-label departure-label" for="departure-date">Дата Выезда:</label>
+
 					<input class="field" type="text" id="departure-date" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату" required>
+
 					<p class="luck">На эти даты есть свободные номера. Пока есть.</p>
 				</div>
-				<label class="field-label amount-adult" for="adult">Взрослые:</label>
-				<span class="field-box adult-button">
+				<div class="amount">
+					<label class="field-label amount-adult" for="adult">Взрослые:</label>
+					<span class="field-box adult-button">
               <button class="field-button decrease" type="button">
                 <span class="visually-hidden">Уменьшить количество взрослых.</span>
-				<svg class="image-decrease" xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2">
-					<path d="M0 0v2h14V0H0Z" />
-				</svg>
-				</button>
-				<input class="field-number" id="adult" name="adult" type="number" value="2" placeholder="Количество взрослых">
-				<button class="field-button addition" type="button">
-					<span class="visually-hidden">Увеличить количество взрослых.</span>
-					<svg class="image-addition" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
-						<path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+					<svg class="image-decrease" xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2">
+						<path d="M0 0v2h14V0H0Z" />
 					</svg>
-				</button>
-				</span>
-				<span class="amount-children form-label-icon">
-            <label class="field-label" for="children"
-              >Дети:</label
-            >
+					</button>
+					<input class="field-number" id="adult" name="adult" type="number" value="2" placeholder="Количество взрослых">
+					<button class="field-button addition" type="button">
+						<span class="visually-hidden">Увеличить количество взрослых.</span>
+						<svg class="image-addition" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
+							<path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+						</svg>
+					</button>
+					</span>
+					<span class="amount-children form-label-icon">
+
             <span class="tooltip">
+              <label class="field-label" for="children">Дети:</label>
               <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                 <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none" viewBox="0 0 2 12"><path fill="#fff" fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd"/></svg>
               </button>
               <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-				</span>
-				</span>
-				<span class="field-box children-button">
+					</span>
+					</span>
+					<span class="field-box children-button">
               <button class="field-button decrease" type="button">
                 <span class="visually-hidden">Уменьшить количество детей.</span>
-				<svg class="image-decrease" xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2">
-					<path d="M0 0v2h14V0H0Z" />
-				</svg>
-				</button>
-				<input class="field-number" id="children" name="children" type="number" value="2" min="0" placeholder="Количество детей">
-				<button class="field-button addition" type="button">
-					<span class="visually-hidden">Увеличить количество детей.</span>
-					<svg class="image-addition" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
-						<path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+					<svg class="image-decrease" xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2">
+						<path d="M0 0v2h14V0H0Z" />
 					</svg>
-				</button>
-				</span>
+					</button>
+					<input class="field-number" id="children" name="children" type="number" value="2" placeholder="Количество детей">
+
+					<button class="field-button addition" type="button">
+						<span class="visually-hidden">Увеличить количество детей.</span>
+						<svg class="image-addition" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
+							<path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+						</svg>
+					</button>
+					</span>
+				</div>
 				<button class="search-button button" type="submit"> Найти</button>
 			</form>
 		</div>
