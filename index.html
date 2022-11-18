@@ -14,11 +14,11 @@
 	<div class="wrapper">
 		<header class="main-header">
 			<a class="main-logo" href="index.html">
-				<img src="images/header-logo.svg" alt="Logo Sedona" width="140" height="70">
+				<img src="images/header-logo.svg" alt="Logo Sedona." width="140" height="70">
 			</a>
 			<nav class="main-nav">
 				<ul class="main-nav-list">
-					<li class="navigation-item navigation-item-current"><a href="#" class="main-nav-link">Главная</a></li>
+					<li class="navigation-item"><a href="#" class="main-nav-link navigation-item-current">Главная</a></li>
 					<li class="navigation-item"><a href="#" class="main-nav-link">О Седоне</a></li>
 					<li class="navigation-item"><a href="catalog.html" class="main-nav-link">Гостиницы</a></li>
 				</ul>
@@ -28,7 +28,7 @@
 					<span class="visually-hidden">Поиск.</span></a>
 				<a class="header-link-like" href="#">
 					<span class="visually-hidden">Корзина.</span></a>
-				<a class="header-link-want button button-brown open-modal-button" >Хочу сюда!</a>
+				<a class="header-link-want button button-brown open-modal-button" href="#" >Хочу сюда!</a>
 			</div>
 
 		</header>
@@ -86,7 +86,7 @@
 				<div class="advantages-card">
 					<img class="advantages-item-image" src="images/index-advantages-bridge.jpg" width="800" height="384" alt="Сотворенный природой каменный мост.">
 					<div class="advantages-card-content">
-						<h3 class="advantages-card-title">Там есть мост<br> дьявола</h3>
+						<h3 class="advantages-card-title">Там есть<br> мост дьявола</h3>
 						<p class="advantages-card-description">
 							Да, по нему можно пройти!
 							<br> Если вы осмелитесь,
@@ -129,7 +129,7 @@
 				<p class="search-hotels-title"><b>ЗАИНТЕРЕСОВАЛИСЬ?</b></p>
 				<p class="search-hotels-description">Укажите предполагаемые даты поездки,
 					<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<a class="button-brown search-hotels-button open-modal-button ">Поиск гостинницы в Седоне</a>
+				<a class="button-brown search-hotels-button open-modal-button" href="#">Поиск гостиницы в Седоне</a>
 			</section>
 			<section class="subscribe-block">
 				<h2 class="visually-hidden">Подписка на рассылку</h2>
@@ -138,7 +138,8 @@
 					<br> честное бойскаутское!</p>
 				<div class="subscribe-input">
 					<form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-						<input class="subscribe-email" placeholder="Ваш email" type="email" name="subscribe-email" id="subscribe-email" required>
+            <label for="email" class="field-label visually-hidden">Ваш e-mail.</label>
+						<input class="subscribe-email" placeholder="Ваш email" type="email" id="email" name="subscribe-email" id="subscribe-email" required>
 						<button class="subscribe-button button button-blue" type="submit">Подписаться</button>
 					</form>
 				</div>
@@ -194,12 +195,12 @@
 				<label class="form-label appointment-label" for="appointment-date">Дата Заезда:</label>
 				<div class="input-appointment">
 
-					<input class="field" type="text" id="appointment-date" name="appointment-date" value="27 апреля 2020" placeholder="Укажите дату">
+					<input class="field" type="text" id="appointment-date" name="appointment-date" value="27 апреля 2020" placeholder="Укажите дату" required>
 					<p class="error">Мы не можем отправить вас в прошлое.</p>
 				</div>
 				<label class="form-label departure-label" for="departure-date">Дата Выезда:</label>
 				<div class="input-departure">
-					<input class="field" type="text" id="departure-date" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
+					<input class="field" type="text" id="departure-date" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату" required>
 					<p class="luck">На эти даты есть свободные номера. Пока есть.</p>
 				</div>
 				<label class="field-label amount-adult" for="adult">Взрослые:</label>
@@ -248,7 +249,7 @@
 			</form>
 		</div>
 	</div>
-  <script src="skripts/modal.js"></script>
+  <script src="scripts/modal.js"></script>
 </body>
 
 </html>
