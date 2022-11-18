@@ -356,6 +356,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 62px;
+  margin-top: 0;
 
 }
 .advantages-card-title::after {
